@@ -17,9 +17,6 @@ let user = document.querySelector('#user');
 let pass = document.querySelector('#pass');
 let Regbtn =document.querySelector('.regbtn');
 
-console.log(123);
-
-console.log(user);
 
 
 
@@ -166,16 +163,12 @@ Regbtn.onclick = function(){
             if(result==1){
                 
                 // 注册成功
-                // $("messageBox").style.cssText="color:green";
-                // $("messageBox").innerHTML="注册成功，请<a href='login03.html'>登录</a>！";
                 alert("注册成功，去登录吧！")
                 logpage.style.display = 'block';
                 regpage.style.display = 'none';
             }else if(result==0){
                 
                 // 注册失败
-                // $("messageBox").style.cssText="color:red";
-                // $("messageBox").innerHTML="注册失败，请重新注册！";
                 alert("注册失败，请重新注册！")
             }
         }

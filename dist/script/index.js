@@ -17,9 +17,7 @@ var changereg = document.querySelector('.changereg');
 var changelog = document.querySelector('.changelog');
 var user = document.querySelector('#user');
 var pass = document.querySelector('#pass');
-var Regbtn = document.querySelector('.regbtn');
-console.log(123);
-console.log(user); //导航栏
+var Regbtn = document.querySelector('.regbtn'); //导航栏
 
 man.onmouseover = function () {
   nav.style.display = 'block';
@@ -158,15 +156,11 @@ Regbtn.onclick = function () {
 
       if (result == 1) {
         // 注册成功
-        // $("messageBox").style.cssText="color:green";
-        // $("messageBox").innerHTML="注册成功，请<a href='login03.html'>登录</a>！";
         alert("注册成功，去登录吧！");
         logpage.style.display = 'block';
         regpage.style.display = 'none';
       } else if (result == 0) {
         // 注册失败
-        // $("messageBox").style.cssText="color:red";
-        // $("messageBox").innerHTML="注册失败，请重新注册！";
         alert("注册失败，请重新注册！");
       }
     }
